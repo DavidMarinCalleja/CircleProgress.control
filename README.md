@@ -22,7 +22,7 @@ pod "CircleProgress.control"
 
 ## Author
 
-David, david.marin.calleja@gmail.com
+David, 
 
 ## License
 
