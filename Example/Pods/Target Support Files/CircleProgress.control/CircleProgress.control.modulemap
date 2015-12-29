@@ -1,0 +1,6 @@
+framework module CircleProgress_control {
+  umbrella header "CircleProgress.control-umbrella.h"
+
+  export *
+  module * { export * }
+}
