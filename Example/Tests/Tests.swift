@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import CircleProgress.control
+import CircleProgress_control
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
