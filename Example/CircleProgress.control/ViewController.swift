@@ -15,30 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let circleProgress = CircleProgress()
-        let path = circleProgress.makeBezier(CGPoint(x: 0, y: 0))
-        
         let recShape = CAShapeLayer()
-        recShape.bounds = CGRect(x:0, y:0, width:100, height:100)
-        recShape.position = self.view.center
-        recShape.path = path.CGPath
         
-        recShape.strokeColor = UIColor.blackColor().CGColor
-        recShape.fillColor = UIColor.clearColor().CGColor
-        recShape.lineWidth = 2.0
-        recShape.lineCap = kCALineCapRound
-
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        /* set up animation */
-        animation.fromValue = 0.0
-        animation.toValue = 1.0
-        animation.duration = 2.5
-        animation.fillMode = kCAFillModeForwards
-        animation.removedOnCompletion = false
+        let circleProgress = CircleProgress()
+        circleProgress.makeBezier(CGPoint(x: 0, y: 0),
+                                  layer: recShape,
+                                   view: self.view)
         
-        recShape.addAnimation(animation, forKey: "drawLineAnimation")
-        
-        self.view.layer.addSublayer(recShape)
     }
 
     override func didReceiveMemoryWarning() {
