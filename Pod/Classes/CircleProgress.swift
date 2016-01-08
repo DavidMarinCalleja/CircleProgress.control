@@ -18,7 +18,7 @@ public class CircleProgress : UIControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func makeBezier (centerPoint: CGPoint, layer: CAShapeLayer, view: UIView) {
+    public func makeBezier (centerPoint: CGPoint, view: UIView) {
         let path = UIBezierPath()
         path.addArcWithCenter(centerPoint,
                                     radius: 50.0,
@@ -26,6 +26,7 @@ public class CircleProgress : UIControl {
                                   endAngle: CGFloat( 2 * M_PI ),
                                  clockwise: true)
         
+        let layer = CAShapeLayer()
         layer.bounds = CGRect(x:0, y:0, width:100, height:100)
         layer.position = view.center
         layer.path = path.CGPath

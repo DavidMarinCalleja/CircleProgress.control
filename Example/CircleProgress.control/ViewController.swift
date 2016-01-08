@@ -15,11 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let recShape = CAShapeLayer()
+        
         
         let circleProgress = CircleProgress()
         circleProgress.makeBezier(CGPoint(x: 0, y: 0),
-                                  layer: recShape,
                                    view: self.view)
         
     }
