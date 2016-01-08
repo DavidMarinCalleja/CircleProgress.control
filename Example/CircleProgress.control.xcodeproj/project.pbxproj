@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		636EFB251C40390700E8FD3A /* CircleProgressAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB231C40390700E8FD3A /* CircleProgressAppDelegate.swift */; };
+		636EFB261C40390700E8FD3A /* CircleProgressAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB241C40390700E8FD3A /* CircleProgressAppDependencies.swift */; };
+		636EFB3D1C40419E00E8FD3A /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB3C1C40419E00E8FD3A /* RootWireframe.swift */; };
+		636EFB4D1C4041B000E8FD3A /* ListCircleProgressTypeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB411C4041B000E8FD3A /* ListCircleProgressTypeDataManager.swift */; };
+		636EFB4E1C4041B000E8FD3A /* ListCircleProgressTypeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB431C4041B000E8FD3A /* ListCircleProgressTypeInteractor.swift */; };
+		636EFB4F1C4041B000E8FD3A /* ListCircleProgressTypeModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB451C4041B000E8FD3A /* ListCircleProgressTypeModuleInterface.swift */; };
+		636EFB501C4041B000E8FD3A /* ListCircleProgressTypePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB471C4041B000E8FD3A /* ListCircleProgressTypePresenter.swift */; };
+		636EFB511C4041B000E8FD3A /* ListCircleProgressTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB491C4041B000E8FD3A /* ListCircleProgressTypeViewController.swift */; };
+		636EFB521C4041B000E8FD3A /* ListCircleProgressTypeViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB4A1C4041B000E8FD3A /* ListCircleProgressTypeViewInterface.swift */; };
+		636EFB531C4041B000E8FD3A /* ListCircleProgressTypeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFB4C1C4041B000E8FD3A /* ListCircleProgressTypeWireframe.swift */; };
 		7FC0BCD75152493AECF65982 /* Pods_CircleProgress_control_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA53108EC1BBC8CF7CD003 /* Pods_CircleProgress_control_Tests.framework */; };
 		C9164D1B6A53E0D7F9B47C3C /* Pods_CircleProgress_control_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A488538B38ACF1417CCE0FE /* Pods_CircleProgress_control_Example.framework */; };
 /* End PBXBuildFile section */
@@ -30,14 +38,22 @@
 /* Begin PBXFileReference section */
 		607FACD01AFB9204008FA782 /* CircleProgress.control_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleProgress.control_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CircleProgress.control_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleProgress.control_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		636EFB231C40390700E8FD3A /* CircleProgressAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleProgressAppDelegate.swift; path = Classes/CircleProgressAppDelegate.swift; sourceTree = "<group>"; };
+		636EFB241C40390700E8FD3A /* CircleProgressAppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleProgressAppDependencies.swift; path = Classes/CircleProgressAppDependencies.swift; sourceTree = "<group>"; };
+		636EFB3C1C40419E00E8FD3A /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		636EFB411C4041B000E8FD3A /* ListCircleProgressTypeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeDataManager.swift; sourceTree = "<group>"; };
+		636EFB431C4041B000E8FD3A /* ListCircleProgressTypeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeInteractor.swift; sourceTree = "<group>"; };
+		636EFB451C4041B000E8FD3A /* ListCircleProgressTypeModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeModuleInterface.swift; sourceTree = "<group>"; };
+		636EFB471C4041B000E8FD3A /* ListCircleProgressTypePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypePresenter.swift; sourceTree = "<group>"; };
+		636EFB491C4041B000E8FD3A /* ListCircleProgressTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeViewController.swift; sourceTree = "<group>"; };
+		636EFB4A1C4041B000E8FD3A /* ListCircleProgressTypeViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeViewInterface.swift; sourceTree = "<group>"; };
+		636EFB4C1C4041B000E8FD3A /* ListCircleProgressTypeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCircleProgressTypeWireframe.swift; sourceTree = "<group>"; };
 		7401BB9288C8FD7F32F98449 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7A488538B38ACF1417CCE0FE /* Pods_CircleProgress_control_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleProgress_control_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B96056142435B1BEB5B615 /* CircleProgress.control.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CircleProgress.control.podspec; path = ../CircleProgress.control.podspec; sourceTree = "<group>"; };
@@ -104,8 +120,7 @@
 		607FACD21AFB9204008FA782 /* Example for CircleProgress.control */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				636EFB1E1C40385700E8FD3A /* Classes */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -148,6 +163,137 @@
 				E8E61DF3C50A1BC402FAFAE7 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		636EFB1E1C40385700E8FD3A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB361C40419E00E8FD3A /* Common */,
+				636EFB3E1C4041B000E8FD3A /* Modules */,
+				636EFB231C40390700E8FD3A /* CircleProgressAppDelegate.swift */,
+				636EFB241C40390700E8FD3A /* CircleProgressAppDependencies.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		636EFB361C40419E00E8FD3A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB371C40419E00E8FD3A /* Categories */,
+				636EFB381C40419E00E8FD3A /* Model */,
+				636EFB391C40419E00E8FD3A /* Store */,
+				636EFB3A1C40419E00E8FD3A /* Utils */,
+				636EFB3B1C40419E00E8FD3A /* Wireframe */,
+			);
+			name = Common;
+			path = Classes/Common;
+			sourceTree = "<group>";
+		};
+		636EFB371C40419E00E8FD3A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		636EFB381C40419E00E8FD3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		636EFB391C40419E00E8FD3A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		636EFB3A1C40419E00E8FD3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		636EFB3B1C40419E00E8FD3A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB3C1C40419E00E8FD3A /* RootWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		636EFB3E1C4041B000E8FD3A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB3F1C4041B000E8FD3A /* ListCircleProgressType */,
+			);
+			name = Modules;
+			path = Classes/Modules;
+			sourceTree = "<group>";
+		};
+		636EFB3F1C4041B000E8FD3A /* ListCircleProgressType */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB401C4041B000E8FD3A /* DataManager */,
+				636EFB421C4041B000E8FD3A /* Interactor */,
+				636EFB441C4041B000E8FD3A /* ModuleInterface */,
+				636EFB461C4041B000E8FD3A /* Presenter */,
+				636EFB481C4041B000E8FD3A /* View */,
+				636EFB4B1C4041B000E8FD3A /* Wireframe */,
+			);
+			path = ListCircleProgressType;
+			sourceTree = "<group>";
+		};
+		636EFB401C4041B000E8FD3A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB411C4041B000E8FD3A /* ListCircleProgressTypeDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		636EFB421C4041B000E8FD3A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB431C4041B000E8FD3A /* ListCircleProgressTypeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		636EFB441C4041B000E8FD3A /* ModuleInterface */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB451C4041B000E8FD3A /* ListCircleProgressTypeModuleInterface.swift */,
+			);
+			path = ModuleInterface;
+			sourceTree = "<group>";
+		};
+		636EFB461C4041B000E8FD3A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB471C4041B000E8FD3A /* ListCircleProgressTypePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		636EFB481C4041B000E8FD3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB491C4041B000E8FD3A /* ListCircleProgressTypeViewController.swift */,
+				636EFB4A1C4041B000E8FD3A /* ListCircleProgressTypeViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		636EFB4B1C4041B000E8FD3A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				636EFB4C1C4041B000E8FD3A /* ListCircleProgressTypeWireframe.swift */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		732A52D856EBBF63D8C11285 /* Frameworks */ = {
@@ -359,8 +505,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				636EFB3D1C40419E00E8FD3A /* RootWireframe.swift in Sources */,
+				636EFB4D1C4041B000E8FD3A /* ListCircleProgressTypeDataManager.swift in Sources */,
+				636EFB261C40390700E8FD3A /* CircleProgressAppDependencies.swift in Sources */,
+				636EFB251C40390700E8FD3A /* CircleProgressAppDelegate.swift in Sources */,
+				636EFB521C4041B000E8FD3A /* ListCircleProgressTypeViewInterface.swift in Sources */,
+				636EFB531C4041B000E8FD3A /* ListCircleProgressTypeWireframe.swift in Sources */,
+				636EFB501C4041B000E8FD3A /* ListCircleProgressTypePresenter.swift in Sources */,
+				636EFB4E1C4041B000E8FD3A /* ListCircleProgressTypeInteractor.swift in Sources */,
+				636EFB511C4041B000E8FD3A /* ListCircleProgressTypeViewController.swift in Sources */,
+				636EFB4F1C4041B000E8FD3A /* ListCircleProgressTypeModuleInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
